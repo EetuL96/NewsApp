@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/settingKeyword"
+            android:title="Search by Keyword" />
+
+        <item
+            android:id="@+id/settingCountry"
+            android:title="Search by Country" />
+
+        <item
+            android:id="@+id/settingDomain"
+            android:title="Search by Domain" />
+
+        <item
+            android:id="@+id/settingCategory"
+            android:title="Search by Category" />
+
+        <item
+            android:id="@+id/settingSources"
+            android:title="Search by Sources" />
+</menu>

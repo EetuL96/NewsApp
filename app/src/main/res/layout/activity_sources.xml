@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SourcesActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editFilter"
+        android:background="@drawable/rectangle"
+        android:paddingLeft="10dp"
+        android:height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/colorBlack"
+        android:text="Filter by:" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        >
+
+        <Button
+            android:id="@+id/btnCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Category"
+            android:background="@drawable/button2"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="5dp"
+            android:onClick="onBtnClick"/>
+
+        <Button
+            android:id="@+id/btnLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Language"
+            android:background="@drawable/button2"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="5dp"
+            android:onClick="onBtnClick"/>
+
+        <Button
+            android:id="@+id/btnCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Country"
+            android:background="@drawable/button2"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="5dp"
+            android:onClick="onBtnClick"/>
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Clear"
+            android:layout_marginLeft="5dp"
+            android:onClick="onBtnClick"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/sourceList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8.0sp"/>
+</LinearLayout>
